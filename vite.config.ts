@@ -1,6 +1,7 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import cesium from 'vite-plugin-cesium';
 import Components from 'unplugin-vue-components/vite'
 import Pages from 'vite-plugin-pages'
 import createSvgSpritePlugin from 'vite-plugin-svg-sprite'
@@ -12,6 +13,7 @@ export default defineConfig({
     outDir: 'example',
   },
   plugins: [
+    cesium(),
     vue(),
     Icons(),
     createSvgSpritePlugin(),

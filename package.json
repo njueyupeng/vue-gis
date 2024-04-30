@@ -1,6 +1,7 @@
 {
   "name": "vue-gis",
   "version": "0.0.3",
+  "description": "Vue component library for Cesium",
   "scripts": {
     "dev": "vite --host",
     "serve": "vite preview",
@@ -69,6 +70,7 @@
     "@vueuse/motion": "^1.5.6",
     "autoprefixer": "^10.2.5",
     "babel-jest": "^26.6.3",
+    "cesium": "1.107.2",
     "chalk": "^5.0.1",
     "chokidar": "^3.5.3",
     "commitizen": "^4.2.4",
@@ -113,7 +115,8 @@
     "unplugin-icons": "^0.14.2",
     "unplugin-vue": "^0.2.2",
     "unplugin-vue-components": "^0.19.3",
-    "vite": "=2.9.14",
+    "vite": "^5.2.10",
+    "vite-plugin-cesium": "^1.2.22",
     "vite-plugin-pages": "^0.12.1",
     "vite-plugin-svg-sprite": "^0.2.3",
     "vitepress": "=1.0.0-alpha.4",
@@ -124,5 +127,9 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.35.2"
+  },
+  "peerDependencies": {
+    "cesium": "1.x",
+    "vue": ">=3.0.0"
   }
 }
